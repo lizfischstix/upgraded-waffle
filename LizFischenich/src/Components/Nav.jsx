@@ -16,6 +16,7 @@ export default function Nav() {
     };
 
     return (
+      
     <BottomNavigation sx={{ width: 500 }} value={value} onChange={handleChange}>
     
       <BottomNavigationAction
@@ -39,6 +40,6 @@ export default function Nav() {
       />
     
         <BottomNavigationAction label="Contact Liz" value="contact" icon={<SendIcon />} />
-    < /BottomNavigation >
+    </BottomNavigation >
   );
 }
