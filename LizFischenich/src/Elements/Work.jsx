@@ -1,5 +1,7 @@
 export default function Work(){
-    <>
-    <h1>All of the work samples here</h1>
-    </>
+    return(
+        <>
+       <h1>portfolio</h1>
+        </>
+    )
 }

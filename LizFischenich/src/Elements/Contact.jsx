@@ -1,5 +1,10 @@
+import React from "react";
+import { ContactUs } from "../Components/EmailForm";
+
 export default function Contact(){
-    <>
-    <h1>eight six seven five three ohhhhh nine</h1>
+   return(
+   <>
+    <ContactUs />
     </>
+    )
 }
