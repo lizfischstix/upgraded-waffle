@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import RoofingIcon from '@mui/icons-material/Roofing';
 import FingerprintIcon from '@mui/icons-material/Fingerprint';
@@ -17,7 +16,7 @@ export default function Nav() {
 
   return (
     <Box display="flex" justifyContent="center">
-      <BottomNavigation sx={{ width: 250 }} value={value} onChange={handleChange}>
+      
         <Link to='/'>
           <BottomNavigationAction
             label="Liz Fischenich"
@@ -40,9 +39,12 @@ export default function Nav() {
           />
         </Link>
         <Link to='/Contact'>
-          <BottomNavigationAction label="Contact Liz" value="contact" icon={<SendIcon sx={{fontSize: 50}} />} />
+          <BottomNavigationAction 
+         label="Contact Liz" 
+          value="contact" 
+          icon={<SendIcon sx={{fontSize: 50}} />} />
         </Link>
-      </BottomNavigation>
+
     </Box>
   );
 }
